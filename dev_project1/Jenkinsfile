@@ -1,0 +1,29 @@
+pipeline {
+    agent any  // Runs on any available agent (Jenkins node)
+
+    stages {
+        stage('Clone Repository') {
+            steps {
+                git 'https://github.com/your-repo/project.git'  // Replace with your GitHub repo
+            }
+        }
+
+        stage('Build') {
+            steps {
+                sh 'mvn clean install'  // Builds the Java project using Maven
+            }
+        }
+
+        stage('Test') {
+            steps {
+                sh 'mvn test'  // Runs unit tests
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                echo 'Deploying the application...'  // Deployment step (modify as needed)
+            }
+        }
+    }
+}
