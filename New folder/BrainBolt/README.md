@@ -80,7 +80,7 @@ Open [http://localhost:3000](http://localhost:3000)
 ## 🎮 How It Works
 
 ### Starting Level
-Users begin at **difficulty level 3** (1-10 scale).
+Users begin at **difficulty level 1** (1-10 scale).
 
 ### Adaptive Algorithm
 
