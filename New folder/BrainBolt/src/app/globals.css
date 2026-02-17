@@ -1,0 +1,126 @@
+@import "tailwindcss";
+
+:root {
+	--font-sans: var(--font-space-grotesk);
+	--font-display: var(--font-fraunces);
+
+	--color-bg: #f7f3ef;
+	--color-surface: #ffffff;
+	--color-surface-raised: #fdf9f5;
+	--color-border: rgba(16, 20, 30, 0.12);
+	--color-foreground: #141823;
+	--color-muted: #596070;
+	--color-accent: #2b6cff;
+	--color-accent-strong: #1f47c8;
+	--color-on-accent: #f6f7ff;
+	--color-success: #2a8a5b;
+	--color-danger: #c2433a;
+	--color-warning: #c07c1e;
+
+	--space-0: 0px;
+	--space-1: 0.25rem;
+	--space-2: 0.5rem;
+	--space-3: 0.75rem;
+	--space-4: 1rem;
+	--space-5: 1.25rem;
+	--space-6: 1.5rem;
+	--space-8: 2rem;
+	--space-10: 2.5rem;
+	--space-12: 3rem;
+	--space-16: 4rem;
+	--space-20: 5rem;
+	--space-24: 6rem;
+
+	--radius-sm: 6px;
+	--radius-md: 10px;
+	--radius-lg: 16px;
+	--radius-xl: 24px;
+	--radius-pill: 999px;
+
+	--shadow-sm: 0 2px 8px rgba(10, 12, 16, 0.12);
+	--shadow-md: 0 10px 30px rgba(10, 12, 16, 0.18);
+	--shadow-glow: 0 0 0 1px rgba(255, 255, 255, 0.08), 0 0 40px rgba(82, 109, 255, 0.22);
+
+	--font-size-xs: 0.75rem;
+	--font-size-sm: 0.875rem;
+	--font-size-base: 1rem;
+	--font-size-lg: 1.125rem;
+	--font-size-xl: 1.25rem;
+	--font-size-2xl: 1.5rem;
+	--font-size-3xl: 1.875rem;
+
+	--bg-gradient: radial-gradient(120% 120% at 20% 0%, rgba(43, 108, 255, 0.22) 0%, rgba(247, 243, 239, 0.95) 45%, rgba(247, 243, 239, 1) 100%);
+}
+
+[data-theme="dark"] {
+	--color-bg: #0f1219;
+	--color-surface: #131826;
+	--color-surface-raised: #1a2032;
+	--color-border: rgba(235, 240, 255, 0.14);
+	--color-foreground: #eef2ff;
+	--color-muted: #a6afc4;
+	--color-accent: #7aa2ff;
+	--color-accent-strong: #9cb7ff;
+	--color-on-accent: #0b1020;
+	--color-success: #46c288;
+	--color-danger: #f08b7f;
+	--color-warning: #f2c26d;
+
+	--bg-gradient: radial-gradient(120% 120% at 20% 0%, rgba(35, 50, 95, 0.28) 0%, rgba(18, 24, 45, 0.96) 35%, rgba(15, 18, 25, 1) 100%);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	min-height: 100vh;
+	font-family: var(--font-sans);
+	background: var(--bg-gradient);
+	color: var(--color-foreground);
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}
+
+@keyframes rise-in {
+	from {
+		opacity: 0;
+		transform: translateY(12px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes fade-in {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.animate-rise-in {
+	animation: rise-in 0.6s ease-out both;
+}
+
+.animate-fade-in {
+	animation: fade-in 0.4s ease-out both;
+}
