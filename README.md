@@ -274,6 +274,12 @@ brainbolt/
 - [ ] AI-generated questions
 - [ ] Question difficulty calibration
 
+
+## 🎥 Live Demo
+
+Watch BrainBolt in action! The video demo showcases the adaptive quiz system responding to user performance in real-time. You'll see the difficulty dynamically adjusting as questions are answered, streak multipliers building up with correct answers, and the gentle streak decay mechanism in action. The demo also highlights the smooth dark mode transitions, real-time metrics tracking, and the intelligent question rotation system that ensures a varied learning experience. See how the platform maintains state across sessions and prevents duplicate submissions for a seamless quiz experience.
+
+[View Demo Video](./WhatsApp Video 2026-02-17 at 18.04.14.mp4)
 ---
 
 **Built with ❤️ for learning**
